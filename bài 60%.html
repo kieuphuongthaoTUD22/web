@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 60%</title>
+<link href="bai60%.css" rel="Stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="container nav-container">
+            <a href="" class="logo">Phương Thảo</a>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#servies">Servies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fa-solid fa-circle-user"></i></a></li>   
+            </ul>
+        </div>
+    </header>
+
+    <!--home-->
+    <section id="home" class="section">
+        <div class="container header-container">
+            <div class="header-left">
+                <img src="anh1.jpg" alt="">
+            </div>
+
+            <div class="header-right">
+                <p><b>Hello, I'm</b></p>
+                <h1 class="logo">Phương Thảo</h1>
+                <h2>222001394</h2>
+                <div class="header-button">
+                    <a href="#about" class="btn btn1">About</a>
+                    <a href="#contact" class="btn">Contact</a> 
+                </div>
+                <div class="header-links">
+                    <a href="https://github.com/thuhuyen20204/thietkeweb" target="_blank" class="icon2"><i class="fa-brands fa-github"></i></a>
+                    <a href="index.html" target="_blank" class="icon2"><i class="fa-brands fa-wordpress"></i></a>
+                    <a href="https://www.facebook.com/me/" target="_blank" class="icon2"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="section">
+        <h1 class="heading">Phương Thảo</h1>
+        <div class="container about-container">
+            <div class="about-left">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="ảnh 2.jpg" alt="">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="ảnh 3.jpg" alt="">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="ảnh 4.jpg" alt="">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="anh1.jpg" alt="">
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </div>
+            <div class="about-right">
+                <div class="basic-edu">
+                    <div class="edu-box">
+                        <i class="fa-solid fa-book"></i>
+                        <br>
+                        <h4>Education</h4>
+                        <p>
+                            2+ years <br>
+                            HNMU
+                        </p>
+                        
+                    </div>
+
+                    <div class="edu-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <br>
+                        <h4>Experience</h4>
+                        <p>
+                            3+ months <br>
+                            Web Development
+                        </p>
+                    </div>
+                </div>
+                <p>Thank you for visiting my website. I'm Thu Huyen, passionate about graphic design and web development. This website is where I showcase the projects I've worked on, as well as share my knowledge and experience in this field. I hope you'll find valuable and interesting information on my website.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--servies-->
+    <section id="servies" class="section">
+        <h1 class="heading">Servies</h1>
+        <div class="container servies-container">
+            <div class="servies-box">
+                <h2>Frontend Development</h2>
+                <div class="servies">
+                    <div class="servies-div">
+                        <i class="fa-solid fa-h"></i>
+                        <div>
+                            <h4>HTML</h4>
+                            <h2 style="font-weight: 500px">_____<span style="color: #bbb">___</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="servies-div">
+                        <i class="fa-solid fa-c"></i>
+                        <div>
+                            <h4>CSS</h4>
+                            <h2 style="font-weight: 500px">___<span style="color: #bbb">_____</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+            </div>
+            
+    </section>
+
+    <!--portfolio-->
+    <section id="portfolio" class="section">
+        <h1 class="heading">Work</h1>
+        <div class="homework1">
+            <div class="LAB">
+                <h3>Buổi 1</h3>
+                <div class="baitap baitap1">
+                    <p><a href="Buổi1.html" target="_blank">Bài 1</a></p>
+                    
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 2</h3>
+                <div class="baitap baitap2">
+                    <p><a href="index2.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 2.2.html" target="_blank">Bài 2</a></p>
+                    <p><a href="Bài 2.3.html" target="_blank">Bài 3</a></p>
+                    <p><a href="Bài 2.4.html" target="_blank">Bài 4</a></p>
+                    <p><a href="Bài 2.5.html" target="_blank">Bài 5</a></p>
+                    <p><a href="Bài 2.6.html" target="_blank">Bài 6</a></p>
+                    <p><a href="index2.7.html" target="_blank">Bài 7</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 3 </h3>
+                <div class="baitap baitap3">
+                    <p><a href="Bài 3.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 3.2.1.html" target="_blank">Bài 2.1</a></p>
+                    <p><a href="Bài 3.2.2.html" target="_blank">Bài 2.2</a></p>
+                    <p><a href="Bài 3.3.1.html" target="_blank">Bài 3.1</a></p>
+                    <p><a href="Bài 3.3.2.html" target="_blank">Bài 3.2</a></p>
+                    <p><a href="Bài 3.3.3.html" target="_blank">Eài 3.3</a></p>
+                    <p><a href="Bài 3.4.1.html" target="_blank">Bài 4.1</a></p>
+                    <p><a href="index.html" target="_blank">Bài 4.2</a></p>
+                  
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 4</h3>
+                <div class="baitap baitap4">
+                    <p><a href="Bài 4.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 4.2.html" target="_blank">Bài 2</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 6</h3>
+                <div class="baitap baitap6">
+                    <p><a href="bài 6.3.html" target="_blank" title="Form đăng ký">Bài trên lớp</a></p>
+                    <p><a href="bài 6.1.html" target="_blank" title="Slideshow">Bài 1</a></p>
+                    <p><a href="bài 6.2.html" target="_blank" title="Change colors">Bài 2</a></p>
+                   
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 7</h3>
+                <div class="baitap baitap7">
+                    <p><a href="thbaibuoi6.html" target="_blank">Examples</a></p>
+                    <p><a href="bài 60%.html" target="_blank">Examples</a></p>
+                    
+                </div>
+            </div>
+           
+        </div>
+        
+    </section>
+     <!--testimonials-->
+     <section id="testimonials" class="section">
+        <h1 class="heading">Testimonials</h1>
+        <div class="container testimonials-container">
+            <div class="slide-content">
+                <article class="slide card card1">
+                     <img src="anh1.jpg" alt="">
+                     <h3>Thu Trang</h3>
+                     <p style="font-size: 22px">Thu Huyen is a reliable and supportive study partner. She is always ready to share knowledge and experiences in studying and research.</p>
+                </article>
+
+                <article class="slide card card1">
+                    <img src="ảnh 2.jpg" alt="">
+                    <h3>Minh An</h3>
+                    <p style="font-size: 22px">Thu Huyen is a dynamic and creative student. She values learning and continuously strives to develop herself.</p>                  
+               </article>
+
+               <article class="slide card card1">
+                <img src="ảnh 3.jpg" alt="">
+                <h3>Le Quyen</h3>
+                <p style="font-size: 22px">I find Thu Huyen to be a reliable and professional colleague. She has good teamwork skills and contributes positively to every project.</p>                  
+           </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="section">
+        <h1 class="heading">Contact me</h1>
+        <div class="container contact-container">
+            <div class="contact-left">
+                <a href="https://www.facebook.com/profile.php?id=100015689286123" target="_blank" class="icon2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thuhuyen20204/" target="_blank" class="icon2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.net/@thuhuyen20204" target="_blank" class="icon2"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://discord.com/channels/@thuhuyen20204" target="_blank" class="icon2"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.tiktok.com/@thuhuyen20204" target="_blank" class="icon2"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <div class="contact-right">
+                <form action="#">
+                    <input type="text" required placeholder="Your name">
+                    <input type="email" required placeholder="Your email">
+                    <input type="number" equired placeholder="Your number">
+                    <textarea name="messenger" cols="30" rows="4" required placeholder="Your messenger"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="final.js"></script>
+    <!--footer-->
+    <footer>
+        <div class="container footer-container"></div>
+    </footer>
+</html>
