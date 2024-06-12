@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -9,4 +10,17 @@ form{
     border: 1px solid black;
     border-radius: 5px;
     padding-left: 400px;
+=======
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+form{
+    width: 900px;
+    height: 120%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 400px;
+>>>>>>> f7de1ccb53c5844a60178105bc55d2ab60f42b5b
 }
