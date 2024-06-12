@@ -94,7 +94,7 @@ a:hover{
     width: 8rem;
     border-radius: 2rem;
     cursor: pointer;
-    border:  2px solid #9d95d0;
+    border:  2px solid #97c5de;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -106,23 +106,23 @@ a:hover{
 }
 
 .btn:hover{
-    background-color: #9d95d0;
+    background-color: #97c5de;
     color: #ffffff;
 }
 
 .btn1, .btn-dark{
-    background-color: #ada6d8;
+    background-color: #97c5de;
     color: #ffffff !important;
     text-decoration: none !important;
     border: none;
 }
 
 .btn1:hover{
-    background-color: #9d95d0;
+    background-color: #97c5de;
     color: black;
 }
 .btn-dark:hover{
-    background-color: #ada6d8;
+    background-color: #97c5de;
 }
 
 img{
@@ -144,7 +144,9 @@ i:hover{
 .icon2:hover{
     transform: scale(1.3);
 }
-
+.fa {
+    font-size:24px
+}
 .container{
     margin: 0 auto;
     max-width: 1024px;
@@ -162,7 +164,7 @@ header{
     display: grid;
     width: 100%;
     place-items: center;
-    background-color: #bdb4f6;
+    background-color: #83d0f7;
 }
 
 .nav-container{
@@ -191,12 +193,12 @@ header{
 }
 
 .menu .active{
-    background-color: #bdb4f6;
+    background-color: #b4d1f6;
     color: #151720;
 }
 
 .active:hover{
-    background-color: #bdb4f6 ;
+    background-color: #a0c2f1 ;
 }
 
 /* home */
@@ -406,7 +408,7 @@ header{
 
 .card:hover{
     background-color: transparent;
-    border-color: #e4ae8f;
+    border-color: #a9d4f8;
 }
 
 /*testimonials*/
@@ -430,8 +432,8 @@ header{
 }
 
 .slide img{
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     border: 2px solid #cce48f;
     margin-bottom: .8rem;
@@ -463,7 +465,7 @@ header{
     align-items: center;
     gap: 2rem;
     flex-direction: column;
-    border-right: 3px solid #cce48f;
+    border-right: 3px solid #97c5de;
 }
 
 .contact-left a{
@@ -474,7 +476,7 @@ form input, textarea{
     width: 100%;
     padding: 1.4rem;
     background: transparent;
-    border: 2px solid #cce48f;
+    border: 2px solid #97c5de;
     border-radius: .8rem;
     margin-bottom: 1rem;
     font-size: 16px;
@@ -486,7 +488,7 @@ form input, textarea{
 
 /*footer*/
 footer{
-    background-color: #bdb4f6;
+    background-color: #83d0f7;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -587,6 +589,7 @@ footer{
         padding: 10px;
     }
     .servies{
+            
         gap: 20px;
     }
     .servies-div{
@@ -626,7 +629,7 @@ footer{
 }
 .LAB{
     margin-top: 20px;
-    background-color: #a4bdf9;
+    background-color: #b4d5f9;
     width: 300px;
     height: 300px;
     margin-bottom: 50px;
@@ -679,6 +682,12 @@ footer{
     margin-top: 72px;
 }
 .baitap7 p:first-child{
+    margin-top: 60px;
+}
+.baitap8 p:first-child{
+    margin-top: 60px;
+}
+.baitap9 p:first-child{
     margin-top: 60px;
 }
 .LAB:hover .baitap, .LAB:focus .baitap{
